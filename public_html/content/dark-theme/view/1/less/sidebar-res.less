@@ -1,0 +1,210 @@
+@media (max-width: @screen-sm-max) {
+	html.overflow-hidden {
+		&,
+		body {
+			overflow: hidden;-webkit-overflow-scrolling:touch;
+		}
+	}
+	.ab-sidebar-coupon {
+	    position: fixed;
+	    width: 250px;
+	    -webkit-transition: all 300ms ease;
+	    transition: all 300ms ease;
+	    background: white;
+	    z-index: 1055;
+	    -webkit-box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    height: 100%;
+	    top: 0px;
+	    right: -280px;
+	    bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 100px;
+	    overflow: auto;
+	    &.active {
+	    	right: 0px;
+	    }
+		&:before {
+			content: '';
+		    position: fixed;
+		    right: 0px;
+		    top: 0px;
+		    bottom: 0;
+			opacity: 0;
+		    -webkit-transition: all 300ms ease;
+		    transition: all 300ms ease;
+		}
+		&.active:before {
+		    left: 0;
+		    right: 250px;
+		    background: rgba(0, 0, 0, 0.75);
+		    z-index: 1054;
+			opacity: 1;
+		}
+	}
+	.ab-sidebar-close {
+	    position: fixed;
+	    bottom: 0;
+	    height: 50px;
+	    background: red;
+	    width: 250px;
+	    line-height: 50px;
+	    z-index: 1054;
+	    cursor: pointer;
+	    background: @brand-danger;
+	    color: white;
+	    text-align: center;
+	    font-weight: 500;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.ab-sidebar-leagues {
+		background: darken(@panel-heading-main, 3%);
+	    position: fixed;
+	    width: 250px;
+	    -webkit-transition: all 300ms ease;
+	    transition: all 300ms ease;
+	    z-index: 1055;
+	    -webkit-box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    height: 100%;
+	    right: -280px;
+	    bottom: 0;
+	    overflow: auto;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 100px;
+		&:before {
+			content: '';
+		    position: fixed;
+		    right: 0px;
+		    top: 0px;
+		    bottom: 0;
+			opacity: 0;
+		    -webkit-transition: all 300ms ease;
+		    transition: all 300ms ease;
+		}
+		&.active:before {
+		    left: 0;
+		    right: 250px;
+		    background: rgba(0, 0, 0, 0.75);
+		    z-index: 1054;
+			opacity: 1;
+		}
+	    &.active {
+	    	right: 0px;
+	    }
+	    .panel-group-live {
+	    	margin-bottom: 0;
+		  > .panel {
+		    &.active {
+		      margin-bottom: 1px!important;
+		    }
+		  }
+		}
+	}
+	.ab-sidebar-sports {
+		background: #fff;
+	    position: fixed;
+	    width: 250px;
+	    -webkit-transition: all 300ms ease;
+	    transition: all 300ms ease;
+	    z-index: 1055;
+	    -webkit-box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    box-shadow: -5px 0px 10px 1px rgba(36, 40, 47, 0.33);
+	    height: 100%;
+	    right: -280px;
+	    bottom: 0;
+	    overflow: auto;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 100px;
+		&:before {
+			content: '';
+		    position: fixed;
+		    right: 0px;
+		    top: 0px;
+		    bottom: 0;
+			opacity: 0;
+		    -webkit-transition: all 300ms ease;
+		    transition: all 300ms ease;
+		}
+		&.active:before {
+		    left: 0;
+		    right: 250px;
+		    background: rgba(0, 0, 0, 0.75);
+		    z-index: 1054;
+			opacity: 1;
+		}
+	    &.active {
+	    	right: 0px;
+	    }
+	    > .panel {
+	    	margin-bottom: 0;
+		    .btn-stats {
+		    	border-radius: 0;
+		    }
+	    }
+	    .panel-group-live {
+	    	margin-bottom: 0;
+		  > .panel {
+		    &.active {
+		      margin-bottom: 1px!important;
+		    }
+		  }
+		}
+	}
+}
+
+
+/****/
+
+@media (max-width: @screen-xs-max) {
+	.ab-sidebar-coupon,
+	.ab-sidebar-sports,
+	.ab-sidebar-leagues {
+		&,
+		&:before {
+		    top: 50px;
+		}
+	}
+}
+
+
+
+.ab-sidebar-toggle {
+	    position: fixed;
+	    right: 0;
+	    transition: all 400ms ease;
+	    padding: 10px;
+	    text-align: center;
+	    font-weight: 500;
+	    color: white;
+	    z-index: 1054;
+	    cursor: pointer;
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		top: 250px;
+	    width: 100px;
+	    box-shadow: 0 0 10px 0px rgba(0,0,0,0.25);
+	    border-radius: 4px 0 0 4px;
+		&.ab-coupon-toggle {
+		    background: @brand-success;
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		top: auto;
+		bottom: 0;
+	    width: 50%;
+		&.ab-coupon-toggle {
+	    right: 0;
+		    background: @brand-success;
+		}
+		&.ab-sports-toggle,
+		&.ab-leagues-toggle {
+	    	left: 0;
+		    background: @brand-warning;
+		}
+	}
+}

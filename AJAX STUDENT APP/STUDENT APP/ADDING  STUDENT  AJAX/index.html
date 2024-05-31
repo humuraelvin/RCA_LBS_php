@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX_STUDENT APP</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <center>
+        <form id="addForm" class="form" enctype="multipart/form-data">
+            <div>
+                <h1><strong>ADD A STUDENT</strong></h1>
+            </div>
+            <br><br>
+            <div>
+                <label for="stuname">Student Name: </label>
+                <input type="text" name="stuname" id="stuname">
+            </div>
+            <br>
+            <div>
+                <label for="age">Date of Birth : </label>
+                <input type="date" name="age" id="age">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password: </label>
+                <input type="text" name="password" id="password">
+            </div>
+            <br>
+            <div>
+                <label for="grade">Grade: </label>
+                <input type="text" name="grade" id="grade">
+            </div>
+            <br>
+            <div>
+                <label for="prof">Student Pic: </label>
+                <input type="file" name="prof" id="prof">
+            </div>
+            <br>
+            <br><br>
+            <div>
+                <input type="submit" value="ADD STUDENT" class="btn btn-success">
+            </div>
+            <br><br>
+        </form>
+        <div id="studentInfo"></div>
+    </center>
+
+    
+    <script src="./ajax_script.js"></script>
+</body>
+</html>

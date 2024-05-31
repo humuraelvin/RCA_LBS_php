@@ -1,0 +1,93 @@
+//
+// Thumbnails
+// --------------------------------------------------
+
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  position: relative;
+  display: block;
+  margin-bottom: @line-height-computed;
+  line-height: @line-height-base;
+
+  > img {
+    border-radius: @thumbnail-border-radius;
+    box-shadow: 0px 10px 10px -5px #a2a2a2;
+  }
+  &.bs2{
+      > img {
+    box-shadow: 0px 10px 10px -5px #09011a;
+  }
+  }
+
+  > img,
+  a > img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Image captions
+  .caption {
+    padding: @thumbnail-caption-padding;
+    color: @thumbnail-caption-color;
+  }
+  .caption-free {
+position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    > .fa {
+      background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    }
+  }
+  .hover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0,0,0,0.75);
+    border-radius: @thumbnail-border-radius;
+    .transition(all .2s ease);
+    .btn {
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      left: 50%;
+      margin-left: -70px;
+      background: fade(#e6302b, 70%);
+      border-color: fade(#e6302b, 10%);
+    }
+  }
+
+  &.poker .caption-free {
+    bottom: 0;
+    background: url(../img/poker-light.png) transparent;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    font-size: @font-size-medium;
+    font-weight: 500;
+    height: 52px;
+  }
+
+  &.poker .hover {
+    bottom: 52px;
+  }
+  &:hover .hover {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,154 @@
+Received data: {
+    "refid": "64fca7a0b27e5",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7008093,
+    "status": 1,
+    "status_text": "Approved",
+    "namesurname": "iyzibet iyzibet",
+    "username": "iyzibet",
+    "amount": 955,
+    "note": null,
+    "change_amount": 955,
+    "created_at": "2023-09-09T17:13:12.000000Z",
+    "finish_at": "2023-09-09T17:22:51.000000Z",
+    "gate": 3,
+    "gate_name": "bank",
+    "method": 1,
+    "sha256": "301e3047faa8eed8f00e16ac5b658ff558b79aaeba2e210cb0d8c3bc2a770489"
+}
+---------
+Record updated successfully with status: 1
+---------
+Current character set: utf8mb4
+---------
+Received data: null
+---------
+No matching record found or the transaction is already processed
+---------
+Current character set: utf8mb4
+---------
+Received data: null
+---------
+No matching record found or the transaction is already processed
+---------
+Current character set: utf8mb4
+---------
+Received data: {
+    "refid": "64fe071e40b70",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7012458,
+    "status": 1,
+    "status_text": "Approved",
+    "namesurname": "iyzibet iyzibet",
+    "username": "iyzibet",
+    "amount": 333,
+    "note": null,
+    "change_amount": 333,
+    "created_at": "2023-09-10T18:14:18.000000Z",
+    "finish_at": "2023-09-10T18:17:21.000000Z",
+    "gate": 0,
+    "gate_name": "cash",
+    "method": 1,
+    "sha256": "7198b1988f4f1c975868b5128dbc5c720d9d49fb62815168732fc453ca84dfa0"
+}
+---------
+Record updated successfully with status: 1
+---------
+Current character set: utf8mb4
+---------
+Received data: {
+    "refid": "64fe08cab3cce",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7012479,
+    "status": 2,
+    "status_text": "Declined",
+    "namesurname": "iyzibet iyzibet",
+    "username": "iyzibet",
+    "amount": 555,
+    "note": "gy",
+    "change_amount": 555,
+    "created_at": "2023-09-10T18:20:03.000000Z",
+    "finish_at": "2023-09-10T18:21:01.000000Z",
+    "gate": 3,
+    "gate_name": "bank",
+    "method": 1,
+    "sha256": "fb8d5f0a8f612d8546b547ae7e9f9efce73506cd133a25df900a73f6822a942c"
+}
+---------
+Record updated successfully with status: 2
+---------
+Current character set: utf8mb4
+---------
+Received data: {
+    "refid": "64fec65245727",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7014357,
+    "status": 2,
+    "status_text": "Declined",
+    "namesurname": "iyzibet iyzibet",
+    "username": "iyzibet",
+    "amount": 250,
+    "note": "\u0130\u015flem s\u00fcresi 15 dakikay\u0131 ge\u00e7ti\u011fi i\u00e7in zaman a\u015f\u0131m\u0131na u\u011frad\u0131",
+    "change_amount": 250,
+    "created_at": "2023-09-11T07:48:44.000000Z",
+    "finish_at": "2023-09-11T08:04:03.000000Z",
+    "gate": 3,
+    "gate_name": "bank",
+    "method": 1,
+    "sha256": "f14b7126d7cd5abab673810552576ee1c1dac60ad71c87918f9bbc5f67012b5d"
+}
+---------
+Record updated successfully with status: 2
+---------
+Current character set: utf8mb4
+---------
+Received data: {
+    "refid": "6501469597655",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7021940,
+    "status": 2,
+    "status_text": "Declined",
+    "namesurname": "Erkan K\u0131l\u0131\u00e7",
+    "username": "erkankilic",
+    "amount": 500,
+    "note": "\u0130\u015fleminiz Reddedildi",
+    "change_amount": 500,
+    "created_at": "2023-09-13T05:20:38.000000Z",
+    "finish_at": "2023-09-13T05:27:03.000000Z",
+    "gate": 0,
+    "gate_name": "cash",
+    "method": 1,
+    "sha256": "3c29c164a66e1ae1f2360a8a012a293927a60677ecf1a7f4c8b8adb53916010c"
+}
+---------
+Record updated successfully with status: 2
+---------
+Current character set: utf8mb4
+---------
+Received data: {
+    "refid": "6554c2aa8c9a6",
+    "type": 0,
+    "type_text": "Deposit",
+    "transaction_id": 7256485,
+    "status": 2,
+    "status_text": "Declined",
+    "namesurname": "demo demo",
+    "username": "demo",
+    "amount": 11111,
+    "note": "\u0130\u015flem s\u00fcresi 15 dakikay\u0131 ge\u00e7ti\u011fi i\u00e7in zaman a\u015f\u0131m\u0131na u\u011frad\u0131",
+    "change_amount": 11111,
+    "created_at": "2023-11-15T13:08:13.000000Z",
+    "finish_at": "2023-11-15T13:24:04.000000Z",
+    "gate": 3,
+    "gate_name": "bank",
+    "method": 1,
+    "sha256": "a1c1095e57940353e360fb3c07772207af35b0ba058d9796e7ca178db02090d7"
+}
+---------
+Record updated successfully with status: 2
+---------

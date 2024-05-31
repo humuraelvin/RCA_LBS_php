@@ -1,0 +1,1 @@
+{"action":"win","amount":"166797.1638","currency":"EUR","game_uuid":"2991b002fa024ebfa2a46e04d91f9242","player_id":"263969","transaction_id":"d16f130a7258473ab2aceba0b2615a83","session_id":"650d8839a8780","type":"win","round_id":"9b48b36222f246bb89d7e119d599b9bf","finished":"1"}

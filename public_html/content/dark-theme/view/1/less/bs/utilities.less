@@ -1,0 +1,253 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+/* Border */
+
+.clear-border {
+  border:0;
+}
+.clear-bt {
+  border-top: 0
+}
+.clear-bb {
+  border-bottom: 0
+}
+.clear-bl {
+  border-left: 0
+}
+.clear-br {
+  border-right: 0
+}
+
+
+/* Margim */
+
+
+.margin-10 {
+  margin: 10px
+}
+.mt-10 {
+  margin-top: 10px
+}
+.ml-10 {
+  margin-left: 10px
+}
+.mr-10 {
+  margin-right: 10px
+}
+.mb-10 {
+  margin-bottom: 10px
+}
+
+.margin-20 {
+  margin: 20px
+}
+.mt-20 {
+  margin-top: 20px
+}
+.ml-20 {
+  margin-left: 20px
+}
+.mr-20 {
+  margin-right: 20px
+}
+.mb-20 {
+  margin-bottom: 20px
+}
+.clear-margin {
+  margin: 0!important
+}
+.clear-mt {
+  margin-top: 0!important
+}
+.clear-mb {
+  margin-bottom: 0!important
+}
+.clear-ml {
+  margin-left: 0!important
+}
+.clear-mr {
+  margin-right: 0!important
+}
+
+/* Padding */
+
+.padding-10 {
+  padding: 10px
+}
+.pt-10 {
+  padding-top: 10px
+}
+.pl-10 {
+  padding-left: 10px
+}
+.pr-10 {
+  padding-right: 10px
+}
+.pb-10 {
+  padding-bottom: 10px
+}
+
+.padding-20 {
+  padding: 20px
+}
+.pt-20 {
+  padding-top: 20px
+}
+.pl-20 {
+  padding-left: 20px
+}
+.pr-20 {
+  padding-right: 20px
+}
+.pb-20 {
+  padding-bottom: 20px
+}
+
+.padding-30 {
+  padding: 30px
+}
+
+.clear-padding {
+  padding: 0!important
+}
+.clear-pt {
+  padding-top: 0!important
+}
+.clear-pb {
+  padding-bottom: 0!important
+}
+.clear-pl {
+  padding-left: 0!important
+}
+.clear-pr {
+  padding-right: 0!important
+}
+@media (max-width: @screen-xs-max) {
+  .clear-p-xs {
+  padding: 0!important
+  }
+}
+
+/***/
+.text-center-xs {
+  @media (max-width: @screen-xs-max) {
+    text-align: center;
+  }
+}
+.text-center-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    text-align: center;
+  }
+}
+.text-center-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    text-align: center;
+  }
+}
+.text-center-lg {
+  @media (min-width: @screen-lg-min) {
+    text-align: center;
+  }
+}
+
+
+.text-left-xs {
+  @media (max-width: @screen-xs-max) {
+    text-align: left;
+  }
+}
+.text-left-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    text-align: left;
+  }
+}
+.text-left-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    text-align: left;
+  }
+}
+.text-left-lg {
+  @media (min-width: @screen-lg-min) {
+    text-align: left;
+  }
+}
+
+
+.text-right-xs {
+  @media (max-width: @screen-xs-max) {
+    text-align: right;
+  }
+}
+.text-right-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    text-align: right;
+  }
+}
+.text-right-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    text-align: right;
+  }
+}
+.text-right-lg {
+  @media (min-width: @screen-lg-min) {
+    text-align: right;
+  }
+}
+
+.border-radius {
+    border-radius: @border-radius-base;
+    overflow: hidden;
+  }
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}

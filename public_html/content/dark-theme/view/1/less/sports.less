@@ -1,0 +1,311 @@
+.ab-page-sports {
+  .ab-main {
+    > .container {
+      position: relative;
+    }
+  }
+}
+
+
+
+.panel-list {
+  .panel-heading {
+    padding: 0;
+    background-color: #2c3c55;
+    color: white;
+    >.panel-title {
+    font-size: 13px;
+      a {
+        display: block;
+        padding: 10px 15px;
+        &:before {
+          content: "\f077";
+          font-family: FontAwesome;
+          float: right;
+        }
+        &.collapsed:before {
+          content: "\f078";
+        }
+      }
+    }
+  }
+  .panel-body {
+    padding: 0;
+  }
+}
+
+
+.nav-sports {
+  .label {
+    color: @gray-base;
+    border: 1px solid #d1dde6;
+    padding-bottom: 0.15em;
+    width: 30px!important;
+    display: inline-block;
+    float: right;
+    line-height: 15px;
+  }
+}
+
+.ab-event {
+  padding: 10px 10px 0;
+  border-bottom: 1px solid #e9ebed;
+  &:extend(.clearfix all);
+
+   > .pull-left,
+  > .pull-right {
+    margin-bottom: 10px;
+    @media (max-width: @screen-md-max) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .participants {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .time {
+    font-size: 12px;
+    .fa {
+    color: #f0ad4e;
+    }
+  }
+
+  &:nth-of-type(even) {
+    background-color: #f6f7f9;
+  }
+  @media (min-width: @screen-lg-min) {
+    .btn-details {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: -10px;
+    }
+  }
+
+    .btn-bet {
+  min-width: 75px;
+    @media (max-width: @screen-xs-max) {
+      margin-bottom: 10px;
+    
+  }
+  &.btn-stats {
+    min-width: 10px;
+    color: @brand-success;
+    &:hover,
+    &:focus,
+    &.focus {
+      color: @white;
+    }
+  }
+  &.btn-details {
+    min-width: 50px;
+  }
+
+
+}
+  .match-details-list {
+    background: #f1f2f5;
+    .box-shadow(inset 0 0 5px rgba(0, 0, 0, 0.15));
+
+    .panel-gray:not(.panel-odds) {
+      padding: 5px;
+      background: #2c3c55;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+
+      > h4 {
+        margin: 0;
+        font-size: @font-size-base;
+      }
+    }
+
+    .panel {
+      margin: 0 10px;
+    }
+
+    .panel-odds {
+      .row {
+        margin: 0;
+
+        > div {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          &:hover {
+            background:#5cb85c;
+            color: white;
+            cursor: pointer;
+          }
+        }
+
+         > span > div span,
+        > div span {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.btn-bet {
+  border: 1px solid #d1dde6;
+  border-radius: @border-radius-base;
+  color: @text-color;
+  margin-top: 3px;
+  background-color: white;
+  margin-left: 5px;
+  > .in {
+    border-right: 1px solid #d1dde6;
+    padding: 7px 10px 8px;
+    margin: 0 10px 0 -10px;
+    color: @brand-warning;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    > .in {
+      color: white;
+      border-color: rgba(255,255,255,0.2);
+    }
+  }
+}
+
+.panel-statistics {
+  background:none;
+  .btn-stats {
+    font-size: @font-size-base;
+    text-align: left;
+    .fa {
+      margin-top: 0.15em;
+    }
+  }
+  input {
+    border-color: white;
+  }
+}
+/*********************/
+@coupon-match-bg: #f1f2f5;
+@coupon-match-result-bg: #44484f;
+@coupon-match-multiplier-bg: #3ba773;
+@input-number-bg: #24282f;
+@input-number-text: #feae2b;
+
+.coupon-bets {
+  &:extend(.clearfix all);
+
+  .coupon-match {
+    &:extend(.clearfix all);
+    background-color: @coupon-match-bg;
+    font-size: @font-size-base;
+
+    .match-info {
+      position: relative;
+      padding: 15px 30px 15px 10px;
+
+      .selected {
+        font-weight: 500;
+      }
+
+      .btn-remove {
+        position: absolute;
+        right: 0;
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-top: -15px;
+        top: 50%;
+      }
+    }
+
+    .match-result {
+      color: white;
+      background-color: @coupon-match-result-bg;
+      padding: 5px 0;
+
+      .pull-right {
+        margin-top: -5px;
+      }
+
+      .text {
+        color: lighten(@coupon-match-result-bg, 50%);
+        font-size: @font-size-small;
+      }
+
+      .multiplier,
+      .result,
+      .text {
+        padding: 5px 10px;
+      }
+
+      .result {
+        float: left;
+        background-color: darken(@coupon-match-result-bg, 10%);
+      }
+
+      .multiplier {
+        float: left;
+        background-color: @coupon-match-multiplier-bg;
+      }
+    }
+  }
+
+  .btn-clear {}
+}
+
+.coupon-result {
+  .title {
+    padding: 5px 0;
+    font-weight: 500;
+  }
+
+  .input-group {
+    .btn,
+    .input-number {
+      border: 0;
+      border-radius: 0;
+      margin: 0 !important;
+      padding: 0 25px;
+      height: 50px;
+      line-height: 50px;
+      background: @coupon-match-result-bg;
+    }
+
+    .btn {
+      color: white;
+      background: darken(@coupon-match-result-bg, 10%);
+    }
+
+    .input-number {
+      background: @input-number-bg;
+      color: @input-number-text;
+      text-align: center;
+      font-size: @font-size-large;
+    }
+  }
+}
+
+.coupon-post {
+  .clearfix {
+    line-height: 30px;
+  }
+
+  .makskazanc-rakam,
+  .oran-rakam {
+    font-size: @font-size-large;
+  }
+
+  .oran-rakam {
+    color: @brand-primary;
+  }
+
+  .makskazanc-rakam {
+    color: @brand-success;
+  }
+}

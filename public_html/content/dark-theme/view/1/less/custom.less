@@ -1,0 +1,43 @@
+.ab-wrapper {
+  &:extend(.clearfix all);
+}
+
+.ab-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  height: 519px;
+  background-image: url('../img/glow.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: inherit;
+  z-index: 9;
+}
+
+@media (min-width: @screen-sm-min) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.modal-login .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 1;
+}
+
+
+
+/*********************************/
+
+.panel-alt-pages {
+  .nav.with-border {
+    margin-left: -4px;
+  }
+}

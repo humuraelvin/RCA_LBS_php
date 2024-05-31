@@ -1,0 +1,11 @@
+<?php 
+$GLOBALS["botyer"]="bwin";
+$GLOBALS["mackodu"]="hitit";
+$GLOBALS["menu"]="4";
+$GLOBALS["kisaad"]="kisaad";
+$GLOBALS["bulten"]="hitit";
+$GLOBALS["tema"]="dark-theme";
+$GLOBALS["canli_kapali"]="0";
+$GLOBALS["canli_kapali_aciklama"]="";
+$GLOBALS["site_kapali"]="0";
+$GLOBALS["site_kapali_aciklama"]="";

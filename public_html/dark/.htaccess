@@ -1,0 +1,51 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+    RewriteRule ^(.*?)$ index.php?par=$1
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+    php_flag display_errors On
+    php_value max_execution_time 30
+    php_value max_input_time 60
+    php_value max_input_vars 1000
+    php_value memory_limit 128M
+    php_value post_max_size 8M
+    php_value session.gc_maxlifetime 1440
+    php_value session.save_path "/var/lib/lsphp/session/lsphp54"
+    php_value upload_max_filesize 2M
+    php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+    php_flag display_errors On
+    php_value max_execution_time 30
+    php_value max_input_time 60
+    php_value max_input_vars 1000
+    php_value memory_limit 128M
+    php_value post_max_size 8M
+    php_value session.gc_maxlifetime 1440
+    php_value session.save_path "/var/lib/lsphp/session/lsphp54"
+    php_value upload_max_filesize 2M
+    php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# “ea-php56” paketini varsayılan “PHP” programlama dili olarak ayarlayın.
+<IfModule mime_module>
+    AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
