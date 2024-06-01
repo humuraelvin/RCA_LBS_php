@@ -87,6 +87,7 @@ if (!isset($_SESSION['user_name'])) {
     </style>
 </head>
 
+
 <body>
     <div class="nav_bar">
         <nav>
@@ -129,3 +130,4 @@ if (!isset($_SESSION['user_name'])) {
 </body>
 
 </html>
+
